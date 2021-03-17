@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Project5</string>
+    <string name="vegetable_Shop">Vegetable Shop</string>
+    <string name="developer">Developed by Redpuppet</string>
+
+    <string name="categories">Categories</string>
+    <string name="shopping_cart">Shopping cart</string>
+    <string name="about_us">About us</string>
+    <string name="terms">Terms</string>
+    <string name="licences">Licences</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="my_cart">My cart</string>
+
+    <string name="price">Price</string>
+    <string name="card_name">Name</string>
+    <string name="price_sign">£</string>
+
+    <string name="new_item">New Items</string>
+    <string name="popular_items">Popular Items</string>
+    <string name="suggested_items">Suggested Items</string>
+
+    <string name="btn_add_to_cart">Add to cart</string>
+
+    <string name="grocery_name"> Grocery name</string>
+    <string name="grocery_description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_review">(Add review)</string>
+
+    <string name="user_name">User name</string>
+    <string name="review_body">Review content</string>
+    <string name="dialog_item_reviewing">You reviewing: </string>
+    <string name="dialog_item_name">Item name</string>
+    <string name="dialog_userNameHint">Your name</string>
+    <string name="dialog_reviewBody">Your review</string>
+    <string name="dialog_warning">Warning</string>
+    <string name="dialog_btn">Add review</string>
+    <string name="warning_text">Please complete all the fields</string>
+
+    <string name="search_hint">Enter an item</string>
+    <string name="serach_catergory1">Category1</string>
+    <string name="serach_catergory2">Category2</string>
+    <string name="serach_catergory3">Category3</string>
+    <string name="serach_allCategories">See all categories</string>
+
+
+    <string name="cart_fragment1_items_description">Your Cart Items</string>
+    <string name="cart_fragment1_no_Items">Your cart is empty</string>
+    <string name="cart_fragment1_sum">Sum: </string>
+    <string name="cart_fragment1_pound_sign"> 55£</string>
+    <string name="cart_fragment1_btn_text">Next</string>
+
+    <string name="cart_card_item_name">Item name</string>
+    <string name="cart_card_delete">Delete</string>
+    <string name="cart_card_price">8.5</string>
+
+    <string name="cart_fragment2_address">Address:</string>
+    <string name="cart_fragment2_postCode">Post Code:</string>
+    <string name="cart_fragment2_phone">Phone:</string>
+    <string name="cart_fragment2_email">Email:</string>
+    <string name="cart_fragment2_btnNext">Next</string>
+    <string name="cart_fragment2_btnBack">Back</string>
+    <string name="cart_fragment2_warning">Warning</string>
+
+
+    <string name="cart_fragment3_items">Items:</string>
+    <string name="cart_fragment3_itemNames">Item Names</string>
+    <string name="cart_fragment3_totalPrice">Total Price:</string>
+    <string name="cart_fragment3_price">Price</string>
+    <string name="cart_fragment3_address">Address:</string>
+    <string name="cart_fragment3_orderAddress">Order address</string>
+    <string name="cart_fragment3_phone">Phone:</string>
+    <string name="cart_fragment3_orderPhone">Order Phone</string>
+    <string name="cart_fragment3_paymentMethod">Select your payment method:</string>
+    <string name="cart_fragment3_rbCreditCard">Credit Card</string>
+    <string name="cart_fragment3_rbPayPal">PayPal</string>
+    <string name="cart_fragment3_btnCheckout">Checkout</string>
+
+    <string name="payment_confirmation">Payment Accepted</string>
+    <string name="payment_btn">Start Shopping</string>
+
+    <string name="licences_tv">Licences</string>
+
+
+
+</resources>

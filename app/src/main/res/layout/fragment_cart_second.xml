@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_address"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/cart_fragment2_address"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_editAddress"
+        android:hint="@string/cart_fragment2_address"
+        android:layout_below="@+id/cart_fragment2_address"
+        android:layout_marginTop="10dp"
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_postCode"
+        android:text="@string/cart_fragment2_postCode"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/cart_fragment2_editAddress"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_editPostCode"
+        android:hint="@string/cart_fragment2_postCode"
+        android:layout_below="@id/cart_fragment2_postCode"
+        android:layout_marginTop="10dp"
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_phone"
+        android:text="@string/cart_fragment2_phone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cart_fragment2_editPostCode"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_editPhone"
+        android:hint="@string/cart_fragment2_phone"
+        android:layout_below="@id/cart_fragment2_phone"
+        android:layout_marginTop="10dp"
+        android:lines="2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_email"
+        android:text="@string/cart_fragment2_email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/cart_fragment2_editPhone"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_editEmail"
+        android:hint="@string/cart_fragment2_email"
+        android:layout_below="@id/cart_fragment2_email"
+        android:layout_marginTop="10dp"
+        android:lines="2"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_btnLinearLayout"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment2_btnBack"
+            android:text="@string/cart_fragment2_btnBack"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment2_btnNext"
+            android:text="@string/cart_fragment2_btnNext"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment2_warning"
+        android:text="@string/cart_fragment2_warning"
+        android:textColor="#E53935"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/cart_fragment2_btnLinearLayout"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

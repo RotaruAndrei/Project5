@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_itemsLinearLayoutID"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment3_items"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_itemNames"
+            android:text="@string/cart_fragment3_itemNames"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_priceLinearLayoutID"
+        android:layout_below="@+id/cart_fragment3_itemsLinearLayoutID"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment3_totalPrice"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_price"
+            android:text="@string/cart_fragment3_price"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_addressLinearLayoutID"
+        android:layout_below="@+id/cart_fragment3_priceLinearLayoutID"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment3_address"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_address"
+            android:text="@string/cart_fragment3_orderAddress"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_phoneLinearLayoutID"
+        android:layout_below="@id/cart_fragment3_addressLinearLayoutID"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment3_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_phone"
+            android:text="@string/cart_fragment3_orderPhone"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_paymentDescription"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cart_fragment3_phoneLinearLayoutID"
+        android:text="@string/cart_fragment3_paymentMethod"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_fragment3_rgPaymentMethod"
+        android:layout_below="@+id/cart_fragment3_paymentDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_rbCreditCard"
+            android:text="@string/cart_fragment3_rbCreditCard"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_fragment3_rbPayPal"
+            android:text="@string/cart_fragment3_rbPayPal"
+            android:layout_marginStart="20dp"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment2_btnBack"
+            android:id="@+id/cart_fragment3_btnBack"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_fragment3_btnCheckout"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/cart_fragment3_btnBack"
+            android:id="@+id/cart_fragment3_tbnCheckout"/>
+
+    </RelativeLayout>
+</RelativeLayout>

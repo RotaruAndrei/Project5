@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroceryItemActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grocery_item_toolbar"
+        android:elevation="4dp"
+        android:background="#4D9377"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grocery_item_button"
+        android:layout_below="@+id/grocery_item_toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="@string/btn_add_to_cart"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/grocery_item_button"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grocery_item_firstRLayout"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grocery_item_firstRLayout_name"
+                    android:text="@string/grocery_name"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grocery_item_firstRLayoutPrice"
+                    android:text="$"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:id="@+id/grocery_item_image"
+                android:layout_below="@+id/grocery_item_firstRLayout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grocery_item_image"
+                android:id="@+id/starsRelativeLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstStarRelativeLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/first_filled_star"
+                        android:src="@drawable/ic_filled_star"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/first_empty_star"
+                        android:src="@drawable/ic_empty_star"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secondStarRelativeLayout"
+                    android:layout_toEndOf="@id/firstStarRelativeLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/second_filled_star"
+                        android:src="@drawable/ic_filled_star"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/second_empty_star"
+                        android:src="@drawable/ic_empty_star" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thirdStarRelativeLayout"
+                    android:layout_toEndOf="@id/secondStarRelativeLayout">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/third_filled_star"
+                        android:src="@drawable/ic_filled_star"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/third_empty_star"
+                        android:src="@drawable/ic_empty_star"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grocery_item_description"
+                android:layout_below="@+id/starsRelativeLayout"
+                android:text="@string/grocery_description"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grocery_item_reviewRelativeLayout"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/grocery_item_description">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reviews"
+                    android:id="@+id/grocery_item_txtReview"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grocery_item_add_review"
+                    android:text="@string/add_review"
+                    android:textColor="@color/purple_200"
+                    android:layout_toEndOf="@id/grocery_item_txtReview"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="italic"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reviews_recyclerView"
+                    android:layout_below="@id/grocery_item_txtReview"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
